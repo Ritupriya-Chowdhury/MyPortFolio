@@ -1,11 +1,21 @@
 import {
     createBrowserRouter,
   } from "react-router-dom";
+import MainLayout from "../MainLayout/MainLayout";
+import HomeLayout from "../Pages/Home/HomeLayout/HomeLayout";
 
 
-export const router = createBrowserRouter([
+ const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <MainLayout></MainLayout>,
+    children:[
+        {
+            path:"/",
+            element:<HomeLayout></HomeLayout>
+        }
+    ]
   },
 ]);
+
+export default router

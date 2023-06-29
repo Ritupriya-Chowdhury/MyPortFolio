@@ -1,9 +1,10 @@
+import Banner from "../Banner/Banner";
 
 
 const HomeLayout = () => {
     return (
-        <div className="text-center font-bold text-2xl">
-            <p>This is Home!</p>
+        <div className="  bg-indigo-950">
+           <Banner></Banner>
         </div>
     );
 };

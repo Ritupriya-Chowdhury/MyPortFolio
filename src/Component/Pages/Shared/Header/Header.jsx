@@ -21,16 +21,16 @@ const Header = () => {
                     <p className="italic font-bold text-2xl ml-4"><span className="text-blue-700">M</span><span className="text-red-600">y</span> <span className="text-orange-700">P</span><span className="text-blue-700">or</span><span className="text-orange-700">t</span><span className="text-red-600">fo</span><span className="text-blue-700">li</span><span className="text-orange-700">o</span></p>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 text-blue-800 text-xl font-bold">
-                        <li><Link to='/'><p className="mt-1"><AiFillHome/></p></Link></li>
-                        <li tabIndex={0}>
-                            <Link to='/resume'>Resume</Link>
+                    <ul className=" menu-horizontal px-1  text-xl font-bold">
+                        <li ><Link className="btn btn-primary" to='/'><p className="mt-1"><AiFillHome/></p></Link></li>
+                        <li  >
+                            <Link className="btn btn-primary ml-2" to='/resume'>Resume</Link>
                         </li>
-                        <li><Link to='/projects'>Projects</Link></li>
+                        <li ><Link className="btn btn-primary ml-2 " to='/projects'>Projects</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn btn-primary btn-outline">Download Resume</a>
+                    <button className="btn btn-primary btn-outline font-bold mr-2 md:mr-4">Download Resume</button>
                 </div>
             </div>
         </div>

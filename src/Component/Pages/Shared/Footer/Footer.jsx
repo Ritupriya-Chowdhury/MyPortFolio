@@ -4,7 +4,7 @@ import { BsFacebook } from "react-icons/bs";
 
 const Footer = () => {
     return (
-        <div className="mt-16">
+        <div className="">
             <footer className="footer footer-center p-10 bg-blue-950 text-primary-content">
                 <div>
 
@@ -12,11 +12,14 @@ const Footer = () => {
                         RituPriya
                     </p>
                     <div className="text-xl md:flex">
-                       <p className="mr-4">
-                        <Link to='/'><p className="mt-1"><AiFillHome></AiFillHome></p></Link>
+                       <p className=" mr-4">
+                        <Link to='/'><p className="mt-1 ml-8"><AiFillHome></AiFillHome></p></Link>
                        </p>
                        <p className="mr-4">
                         <Link to='/aboutMe'>About Me</Link>
+                       </p>
+                       <p className="mr-4">
+                        <Link to='/mySkills'>My Skills</Link>
                        </p>
                        <p className="mr-4">
                         <Link to='/resume'>Resume</Link>

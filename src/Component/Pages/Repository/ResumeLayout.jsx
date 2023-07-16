@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import Resume from './Resume';
+import Resume2 from './Resume2';
 
 
 
@@ -9,7 +9,7 @@ const ResumeLayout = () => {
         <>
         <Helmet><title>Portfolio | Resume</title></Helmet>
         <div className='pt-16'>
-          <Resume></Resume>
+          <Resume2></Resume2>
         </div>
         </>
     );

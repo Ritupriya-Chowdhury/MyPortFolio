@@ -4,6 +4,7 @@ import pic from '../../../../assets/Home/AboutMe/PXL_20230525_052233773-removebg
 import { useEffect } from 'react';
 import { Fade } from "react-awesome-reveal";
 
+
 const AboutMe = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS library
@@ -27,8 +28,9 @@ const AboutMe = () => {
           <div className='text-white mb-4 md:my-8 text-xl'>
 
           <Fade delay={1e3} cascade damping={1e-1}>
-             <p className='text-justify'>My name is Ritupriya Chowdhury.I&apos;m from Chattogarm. I&apos;m a student and currently I&apos;m studying CSEComputer Science & Engineering in a private university. I have learned and practiced Web Software/ApplicationDevelopment. And I&apos;m currently seeking an internship or junior web Software/Application developer/support job. I&apos;m a quick learner and I love to learn and apply new things. I always enjoy teamwork.
+             <p className='text-justify'>My name is Ritupriya Chowdhury.I&apos;m from Chattogarm. I&apos;m a student and currently I&apos;m studying CSE Computer Science & Engineering in a private university. I have learned and practiced Web Software/ApplicationDevelopment. And I&apos;m currently seeking an internship or junior web Software/Application developer/support job. I&apos;m a quick learner and I love to learn and apply new things. I always enjoy teamwork.
               </p> 
+              
             </Fade>
 
           </div>

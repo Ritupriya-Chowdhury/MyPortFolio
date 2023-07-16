@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <div className="py-4 text-center">
                 <div className="text-white text-lg  my-20">
-                    <p className="mb-2">Hi, I'm</p>
+                    <p className="mb-2">Hi, I&apos;m</p>
                     <p className="text-3xl font-bold mb-4">RituPriya Chowdhury</p>
                     <p className=''>FullStack Developer</p>
                     <div className='border-2 rounded-lg rounded-t-full  border-indigo-400 mx-auto w-72 bg-blue-900 mt-8'><img src={logo} alt="" className="mx-auto px-8 pt-4" />

@@ -1,7 +1,29 @@
 import { Link } from "react-router-dom";
 import { AiFillHome } from "react-icons/ai";
 
+
+const PDF_URL='https://64af6e76d310490cd2fbf76b--bucolic-zuccutto-350bb7.netlify.app/Ritu.pdf';
+
+
 const Header = () => {
+
+const DownloadPDF=(url)=>{
+    fetch(url)
+    .then(res=>res.blob())
+    .then(blob=>{
+        const blobURL=window.URL.createObjectURL(new Blob([blob]))
+        const fileName='Ritu.pdf';
+    const atag=document.createElement('a')
+    atag.href=blobURL
+    atag.setAttribute("download",fileName);
+    document.body.appendChild(atag);
+    atag.click();
+    atag.remove();
+    })
+    
+
+}
+
     return (
         <div>
             <div className="navbar bg-transparent fixed">
@@ -30,7 +52,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn btn-primary btn-outline font-bold mr-2 md:mr-4">Download Resume</button>
+                    <button className="btn btn-primary btn-outline font-bold mr-2 md:mr-4" onClick={()=>DownloadPDF(PDF_URL)}>Download Resume</button>
                 </div>
             </div>
         </div>
